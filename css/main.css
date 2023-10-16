@@ -1,0 +1,361 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Autour One', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    height: 830px;
+    
+}
+
+
+
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999999999999999999999999999999;
+    transition: 0.5s;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+header nav .logo h1 {
+    font-size: 33px;
+    font-weight: bold;
+    color: rgb(0,0,26);
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 25px;
+
+}
+
+
+header nav ul li {
+    margin: 0px 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0,0,26);
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(0,0,26);
+}
+
+
+header nav .toggle-menu {
+    display: none;
+
+}
+
+header nav .toggle-menu i {
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 24px;
+    color: rgb(0,0,26);
+    cursor: pointer;
+}
+
+
+@media (max-width : 750px) {
+    
+
+    body {
+        height: 1800px;
+    }
+
+
+    header nav {
+        position: relative;
+    }
+
+    header nav ul {
+        display: block;
+        position: absolute;
+        top: 42px;
+        right: -100%;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        z-index: 888888888888888888888;
+        background-color: rgb(238,238,238);
+        transition: 1s linear;
+    }
+
+    header nav ul li {
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        padding: 15px;
+    }
+
+    .show {
+        right: 0px;
+        transition: 1s linear;
+    }
+
+
+
+
+    header nav .toggle-menu {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+/*  ==================================================== end nav bar ============================================= */ 
+
+
+/*  ===================================================== main ============================================== */
+
+.main {
+    
+    margin-top: 80px;
+}
+
+
+.main .img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+
+.main .info-1 {
+    margin-top: 10px;
+}
+
+.main .info-1 h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(33,37,41);
+}
+
+.main .info-1 p {
+    font-size: 17px;
+    color: rgb(33,37,41);
+}
+
+.main .info-1 .btn {
+    background-color: rgb(241,94,80);
+    color: #fff;
+    outline: none;
+    border: 0;
+    width: 45%;
+    margin-bottom: 15px;
+    font-size: 18px;
+    transition: 0.5s ;
+}
+
+.main .info-1 .btn:hover {
+    background-color:  rgb(0,0,26) ;
+}
+
+.main .info-2 {
+    background-color:  rgb(0,0,26) ;
+}
+
+.main .info-2 .info-3 {
+    border-bottom: 1px solid #fff ;
+}
+
+.main .info-2 .info-3 h2 {
+    padding-top: 55px;
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(233,171,83);
+}
+
+.main .info-2 .info-3 h3 {
+    font-size: 22px;
+    color: rgb(255,253,250);
+    margin-left: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    padding-top: 35px;
+}
+
+.main .info-2 .info-3 h3:hover {
+    color: rgb(233,171,83);
+}
+
+
+
+.main .info-2 .info-3 p {
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+}
+
+.main .info-2 .info-4 h3 {
+    font-size: 22px;
+    color: rgb(255,253,250);
+    margin-left: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    padding-top: 35px;
+}
+
+.main .info-2 .info-4 h3:hover {
+    color: rgb(233,171,83);
+}
+
+.main .info-2 .info-4 p {
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+
+@media (max-width : 750px) {
+    .main .info-1 .btn {
+        margin-left: 100px;
+    }
+}
+
+
+@media (min-width :751px) and (max-width :1000px) {
+    body {
+        height: 2000px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 9999999999999999;
+    }
+
+
+    .main .info-2 .info-4 p {
+        padding-bottom: 25px;
+    }
+}
+
+
+
+/*  =============================================================== end main ================================================ */
+
+
+/*  ============================================================== Categories =============================================== */
+
+
+
+.Categories {
+    margin-top: 10px;
+}
+
+.Categories .categoreies-info h2 {
+    color: rgb(197,198,206);
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.Categories .categoreies-info h3 {
+    font-size: 17px;
+    color: rgb(0,0,26);
+    transition: 0.5s;
+}
+
+.Categories .categoreies-info h3:hover {
+    color: rgb(233,171,83);
+}
+
+.Categories .categoreies-info p {
+    font-size: 15px;
+    color:  hsl(236, 13%, 42%) ; 
+}
+
+
+@media (max-width :750px) {
+    .Categories .categoreies-info {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+@media (min-width :751px) and (max-width :1000px) {
+    .Categories .categoreies-info {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/*  ======================================================= end Categories ============================================   */
+
+
+
+/*  ======================================================== end content ========================================= */
+
+.end-content {
+    
+    margin-top: 20px;
+}
+
+.end-content h3 {
+    font-size: 16px;
+    color: hsl(236, 13%, 42%);
+}
+
+.end-content h4 {
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+
+.end-content h4 a {
+    font-size: 16px;
+    color: rgb(0,0,26);
+}
+
+
+.end-content h4 a:hover {
+    text-decoration: none;
+}
+
+
